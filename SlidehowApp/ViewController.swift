@@ -49,15 +49,7 @@ class ViewController: UIViewController {
             // 進む・戻るボタンの無効化
             preButton.isEnabled = false
             nextButton.isEnabled = false
-        }
-    }
-    
-    @IBAction func unwind(_ segue: UIStoryboardSegue){
-        
-    }
-
-    @IBAction func pauseButton(_ sender: Any) {
-        if self.timer != nil {
+        }else{
             self.timer.invalidate()   // 現在のタイマーを破棄する
             self.timer = nil          // startTimer() の timer == nil で判断するために、 timer = nil としておく
             // 進む・戻るボタンの有効化
@@ -65,6 +57,12 @@ class ViewController: UIViewController {
             nextButton.isEnabled = true
         }
     }
+    
+    @IBAction func unwind(_ segue: UIStoryboardSegue){
+        
+    }
+
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
