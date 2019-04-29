@@ -60,9 +60,10 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="66" id="L4b-Om-sg9"/>
                                 </constraints>
-                                <state key="normal" title="再生/停止"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="15"/>
+                                <state key="normal" title="再生"/>
                                 <connections>
-                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZUX-Ej-mJ1"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RGH-1x-HhS"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -80,6 +81,7 @@
                         <outlet property="nextButton" destination="0dX-hi-6Ze" id="bxm-KH-0AI"/>
                         <outlet property="preButton" destination="xQk-4j-MNs" id="qRc-gq-hvp"/>
                         <outlet property="slideImageView" destination="3Q0-Gi-jaX" id="xcy-uV-u2A"/>
+                        <outlet property="startButton" destination="1bA-dH-IK5" id="nlg-ZA-epT"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
