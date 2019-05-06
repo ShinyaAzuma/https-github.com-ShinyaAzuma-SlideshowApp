@@ -104,7 +104,6 @@
                                 <rect key="frame" x="0.0" y="65" width="414" height="500"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="500" id="jqk-zN-uzG"/>
-                                    <constraint firstAttribute="width" constant="414" id="z0W-CZ-TC5"/>
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f17-SM-zLe">
