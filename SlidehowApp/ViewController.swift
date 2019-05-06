@@ -96,6 +96,7 @@ class ViewController: UIViewController {
             self.timer = nil
             preButton.isEnabled = true
             nextButton.isEnabled = true
+            startButton.setTitle("再生", for: .normal)
         }
 
     let enlargedViewController = storyboard?.instantiateViewController(withIdentifier: "enlarged") as! EnlargedViewController

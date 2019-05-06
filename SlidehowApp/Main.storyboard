@@ -98,11 +98,14 @@
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Zh5-hJ-Pty">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UCm-BR-IQY">
-                                <rect key="frame" x="0.0" y="50" width="414" height="686"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" flexibleMinY="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UCm-BR-IQY">
+                                <rect key="frame" x="0.0" y="65" width="414" height="500"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="500" id="jqk-zN-uzG"/>
+                                    <constraint firstAttribute="width" constant="414" id="z0W-CZ-TC5"/>
+                                </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f17-SM-zLe">
                                 <rect key="frame" x="20" y="20" width="45" height="30"/>
@@ -115,7 +118,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="f17-SM-zLe" firstAttribute="leading" secondItem="Zh5-hJ-Pty" secondAttribute="leadingMargin" id="3FO-Nm-eJK"/>
+                            <constraint firstItem="UCm-BR-IQY" firstAttribute="leading" secondItem="Zh5-hJ-Pty" secondAttribute="leading" id="9cA-ae-uWd"/>
+                            <constraint firstAttribute="trailing" secondItem="UCm-BR-IQY" secondAttribute="trailing" id="Gyq-CK-tmp"/>
                             <constraint firstItem="f17-SM-zLe" firstAttribute="top" secondItem="942-O6-IDV" secondAttribute="bottom" id="NAv-2y-5B9"/>
+                            <constraint firstItem="UCm-BR-IQY" firstAttribute="top" secondItem="f17-SM-zLe" secondAttribute="bottom" constant="15" id="RgP-JX-wfY"/>
                         </constraints>
                     </view>
                     <connections>
